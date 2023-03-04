@@ -4,9 +4,12 @@ This is a RESTful API for managing users in a SQLite database.
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/user-management-api.git`
-2. Install dependencies: `npm install`
-3. Start the server: `npm start`
+1. Clone the repository: 
+```https://github.com/whilmarbitoco/node-rest-api.git```
+2. Install dependencies: 
+```npm install```
+3. Start the server: 
+```npm start```
 
 ## Endpoints
 
