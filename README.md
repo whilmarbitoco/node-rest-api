@@ -65,9 +65,8 @@ Adds a new user to the database. Requires name, age, and gender parameters in th
 
 Example Request:
 
-### ``` 
-POST /users 
-```
+### ` POST /users `
+
 
 Content-Type: application/json
 ```
@@ -84,21 +83,27 @@ Content-Type: application/json
   "message": "User successfully added"
 }
 ```
+
 ### ` POST /users/:id `
 Updates the user with the specified ID. Requires name, age, and gender parameters in the request body.
 
-Example Request:
+**Example Request:**
 
-
-### ` POST /users/1 `
-Content-Type: application/json
 ```
+POST /users/1
+```
+
+### Body
+```
+Content-Type: application/json
+
 {
   "name": "John Smith",
   "age": 33,
   "gender": "male"
 }
 ```
+
 ## Example Response:
 
 ```
@@ -106,26 +111,30 @@ Content-Type: application/json
   "message": "User successfully updated"
 }
 ```
-## ` DELETE /users/:id `
+
+### ` DELETE /users/:id `
 Deletes the user with the specified ID.
 
-Example Request:
+**Example Request:**
 
-
-### ` DELETE /users/1 `
-Example Response:
+```
+DELETE /users/1
+```
+## Example Response:
 
 ```
 {
   "message": "User successfully deleted"
 }
 ```
+
 Dependencies
-Express
-sqlite3
-body-parser
-License
-This project is licensed under the MIT License.
+- Express
+- sqlite3
+- body-parser
+
+
+## This project is licensed under the MIT License.
 
 
 
