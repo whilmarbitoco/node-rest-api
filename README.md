@@ -104,7 +104,7 @@ Content-Type: application/json
 }
 ```
 
-## Example Response:
+### Example Response:
 
 ```
 {
@@ -120,7 +120,7 @@ Deletes the user with the specified ID.
 ```
 DELETE /users/1
 ```
-## Example Response:
+### Example Response:
 
 ```
 {

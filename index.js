@@ -56,9 +56,7 @@ app.delete("/users/:id", (req, res, next) => {
 
 // ADD USER
 app.post("/users", (req, res) => {
-    const name = req.body.name;
-    const gender = req.body.gender;
-    const age = req.body.age;
+    const { name, gender, age } = req.body;
     db.run(
         "INSERT INTO user(name, gender, age) VALUES (?, ?, ?)",
         [name, gender, age],
@@ -75,10 +73,7 @@ app.post("/users", (req, res) => {
 
 //UPDATE A USER
 app.post("/users/:id", (req, res, next) => {
-    const id = req.params.id;
-    const name = req.body.name;
-    const gender = req.body.gender;
-    const age = req.body.age;
+    const { id, name, gender, age } = req.body;
     db.run(
         "UPDATE user SET name = ?, gender = ?, age = ? WHERE id = ?",
         [name, gender, age, id],
